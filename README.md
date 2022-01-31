@@ -4,7 +4,7 @@ This project uses ReactJS and Redux to create a To Do list. It also uses Bootstr
 
 You can add a new task, or remove each one from the list. If the list is empty, the script shows a message on screen to the user.
 
-See it in action: (https://projects.matheusmisumoto.dev/react-redux-to-do-list/)
+See it in action: [https://projects.matheusmisumoto.dev/react-redux-to-do-list/](https://projects.matheusmisumoto.dev/react-redux-to-do-list/)
 
 ## Available Scripts
 
