@@ -13,7 +13,7 @@ const List = ({ulClassName, toDoList, liClassName, deleteToDo, delClassName, ale
         ))}
     </ul>
 ) : (
-    <div class={alertClassName} role="alert">
+    <div className={alertClassName} role="alert">
         There is no tasks to do. Add a new one or enjoy your day! :)
     </div>
 )

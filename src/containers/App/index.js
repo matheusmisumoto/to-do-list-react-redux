@@ -7,7 +7,8 @@ import { addToDo } from '../../store/actions/toDo';
 
 class App extends Component {
     state = {
-        input: ''
+        input: '',
+        disabled: true,
     };
 
     submit = () => {
@@ -21,16 +22,23 @@ class App extends Component {
         addToDo(input);
 
         // then, reset the state and therefore the input text
-        this.setState({input: ''})
+        // as it adds the new item, disable the button to prevent submit empty input as new tasks.
+        this.setState({input: '', disabled: true})
     };
 
     handleOnChange = (event) => {
         // set the value of the item to be added in the state, as it types
-        this.setState({input: event.target.value});
+        // if the input is empty, disable the button to disallow add empty tasks to the list
+        
+        if(event.target.value.length !== 0){
+            this.setState({input: event.target.value, disabled: false});
+        } else {
+            this.setState({input: event.target.value, disabled: true});
+        }
     };
 
     render(){
-        const { input } = this.state;
+        const { input, disabled } = this.state;
         const { toDoList } = this.props;
         return(
             <>
@@ -43,8 +51,9 @@ class App extends Component {
                     alertClassName="alert alert-dark"
                 />
                 <h2 className='mt-5 mb-3'>New Task</h2>
+                {this.state.disabled}
                 <Input onChange={(event) => this.handleOnChange(event)} value={input} className="form-control" />
-                <Button onClick={() => this.submit()} className="btn btn-primary container my-3">Add to the list</Button>
+                <Button onClick={() => this.submit()} className="btn btn-primary container my-3" disabled={disabled}>Add to the list</Button>
                 <footer className='my-5 text-center'>
                     Developed by <a href="https://matheusmisumoto.dev/">Matheus Misumoto</a> in January 2022. Powered by <a href="https://reactjs.org/" target="_blank" rel='noreferrer'>ReactJS</a>.
                 </footer>
