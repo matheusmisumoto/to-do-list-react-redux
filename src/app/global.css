@@ -1,0 +1,10 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+body {
+  margin: 0;
+  letter-spacing: -0.025rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 { font-weight: 700; }

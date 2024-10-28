@@ -1,4 +1,4 @@
-export function deleteToDo(key){
+export function deleteToDo(key: number){
     return {
         type: 'DELETE_TO_DO',
         payload: {
