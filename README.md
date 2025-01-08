@@ -61,3 +61,6 @@ pnpm lint
 bun lint
 ```
 Runs ESLint analysis tool that helps you find and fix problems with your JavaScript code.
+
+---
+Developed with ☕ by [Matheus Misumoto](https://matheusmisumoto.dev) in Santos, Brazil
