@@ -3,11 +3,11 @@
   "version": "2.0.2",
   "private": true,
   "dependencies": {
-    "@reduxjs/toolkit": "^2.6.1",
-    "bootstrap": "^5.3.3",
-    "next": "^15.2.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "@reduxjs/toolkit": "^2.10.1",
+    "bootstrap": "^5.3.8",
+    "next": "^16.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-redux": "^9.2.0",
     "redux-thunk": "^3.1.0"
   },
@@ -18,11 +18,11 @@
     "lint": "next lint"
   },
   "devDependencies": {
-    "@types/node": "22.13.13",
-    "@types/react": "19.0.12",
-    "@types/react-dom": "^19.0.4",
-    "eslint": "9.23.0",
-    "eslint-config-next": "15.2.4",
-    "typescript": "^5.8.2"
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.6",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.0.3",
+    "typescript": "^5.9.3"
   }
 }
